@@ -1,22 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioSource cannon_sfx;
+    public ParticleSystem smoke_vfx;
     public GameManager manager;
     [SerializeField] Shooting shooting;
+    public float cooldown;
+    private float nextFireTime;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Time.time > nextFireTime)
         {
-            Shoot();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Shoot();
+                nextFireTime = Time.time + cooldown;
+            }
         }
     }
 
     void Shoot()
     {
+        cannon_sfx.Play();
+        smoke_vfx.Play();
         shooting.Shoot();
     }
 
