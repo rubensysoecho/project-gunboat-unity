@@ -7,3 +7,8 @@ For doing so I created a WaterManager script that focus on this matter, and it i
 The second thing i wanted to make is the movement, the idea is to allow the player to move only up and down at certain velocity, making a limit around the tile of the water, it was archived in the script PlayerMovement.
 ![image](https://github.com/rubensysoecho/project-gunboat-unity/assets/95583458/275d5e6b-0e01-4254-828c-31befa482ba6)
 
+# Dev Diary 2: Cannon and cannonballs ⚔🔥
+Now that we have the movement, creating the script Shooting does generate a cannonball prefab and throws it forward, also, when the cannonball impacts the boat, the force can make the boat rotate, that would be a problem for the movement, i've solved this freezing the position of the boat in Z and increasing the size of the collider till it contains the boat with a minimum space outside.
+![image](https://github.com/rubensysoecho/project-gunboat-unity/assets/95583458/26a9b9b7-8a01-4cee-a034-649d9aec5755)
+
+
