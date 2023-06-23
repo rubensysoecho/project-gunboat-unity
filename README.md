@@ -9,6 +9,9 @@ The second thing i wanted to make is the movement, the idea is to allow the play
 
 # Dev Diary 2: Cannon and cannonballs ⚔🔥
 Now that we have the movement, creating the script Shooting does generate a cannonball prefab and throws it forward, also, when the cannonball impacts the boat, the force can make the boat rotate, that would be a problem for the movement, i've solved this freezing the position of the boat in Z and increasing the size of the collider till it contains the boat with a minimum space outside.
+After this, we handle the impact with the PlayerController script, and many other things, like particles and sound.
 ![image](https://github.com/rubensysoecho/project-gunboat-unity/assets/95583458/26a9b9b7-8a01-4cee-a034-649d9aec5755)
+![image](https://github.com/rubensysoecho/project-gunboat-unity/assets/95583458/3230ba14-1407-4fcf-8073-4c11f136d99b)
+
 
 
